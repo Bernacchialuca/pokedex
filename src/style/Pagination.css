@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center ;
   gap: 25px;
   font-size: 20px;
 
@@ -10,7 +10,7 @@
 .button-pagination { 
   background-color: #F8D030;
   color: black;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   border: 2px solid rgb(225, 177, 6);
   width: 45px;
@@ -20,5 +20,5 @@
 
 .button-pagination:hover { 
   cursor: pointer;
-  transform: scale(1.01);
+  transform: scale(1.03);
 } 
