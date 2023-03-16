@@ -13,7 +13,7 @@ export const Pagination = (props) => {
         </div>
         </button>
       <div>
-        {page} de {totalPages}
+        <p className='pagination-number'>{page} de {totalPages}</p>
       </div>
         <button className="button-pagination" onClick={onRightClick}>
         <div className="icon">

@@ -1,9 +1,8 @@
-import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Searchbar } from './components/Searchbar';
 import { Pokedex } from './components/Pokedex';
 import {useState, useEffect} from 'react';
-import { getPokemonData, getPokemons, searchPokemon } from './logic/api.js'
+import {getPokemonData, getPokemons, searchPokemon} from './logic/api'
 import { FavoriteProvider } from './contexts/favoriteContext';
 
 export default function App() {
@@ -99,7 +98,7 @@ export default function App() {
       <div className="App">
       <Searchbar onSearch={onSearch}/>
       {notFound ? 
-      <div className="notfound">No se encontro el Pokemon que buscabas</div>
+      <div className="notfound">No se encontro el Pokemon que buscabas 🥺</div>
         : (
         <Pokedex
           loading={loading}

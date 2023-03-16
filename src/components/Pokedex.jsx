@@ -20,7 +20,7 @@ export const Pokedex = (props) => {
     return (
         <div className="pokedex">
             <div className="pagination-container">
-                <h1>Pokedex</h1>
+                <h1 className='header-pokedex'>Pokedex</h1>
                 <Pagination 
                 page={page + 1}
                 totalPages={total}
@@ -31,7 +31,7 @@ export const Pokedex = (props) => {
             {loading ?
             <div className="loading">Cargando Pokemones..</div> :
             <div className="pokedex-grid">
-                {pokemons.map((pokemon, idx) => {
+                {pokemons.map(pokemon => {
                     return (
                     <Pokemon pokemon={pokemon} key={pokemon.name}/>
                     )
